@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
-import { initDb } from "./src/db/models.js";
+const { initDb } = require('./src/db/models.js');
 import {
   createUser,
   getUserByUsername,
